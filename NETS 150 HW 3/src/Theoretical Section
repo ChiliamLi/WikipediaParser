@@ -1,0 +1,24 @@
+Theoretical Section: 
+
+1. URI= uniform resource identifier. URL= uniform resource locator. Every URL is a URI. So URI is the more general name for URL in this case. 
+Our URL also tells us the way in which we will access the location. 
+
+Differences: 1) in java, URI class has a constructor to specify all parts of the syntax
+             2) you can create a new instance of URI using a method, whereas you can't using URL. 
+             
+2. A MalformedURLException is thrown when this happens!
+
+3. getRedirectURL() {
+try 
+{ 
+    httpConnection.setInstanceFollowRedirects(false); 
+    if (httpConnection.getResponseCode() >= 300 && < 400) {
+        return URL(httpConnection.getHeaderField("Location"); 
+    }
+}
+    catch (Exception e) {
+        e.printStackTrace(); 
+    }
+    return null; 
+}
+ASSUMPTION: Assumption that we don't need to catch errors, because it will automatically direct for us with catch: 

@@ -1,0 +1,61 @@
+READ ME: 
+
+INSTRUCTIONS: Run the WikipediaParserMain() function in order to get your answer for 
+
+I will state all the assumptions used for this assignment: 
+
+
+General Assumptions: 
+1) Valid inputs for every question( specifics will be discussed later)
+2) links staying the same consistent formatting for wikipedia and sites not being taken down/ chaning their html links
+3) Organization of formatting with titles remains the same (for H2 and H3 title pages). 
+
+Problem 1: 
+     Assumption that all the conservation statuses are in parenthesis. For example Extinction (EX) has a parenthesis. 
+
+Problem 2: 
+Assumption that the index is within bounds. IE: They don't list a negative number of a number greater than the possible number of criteria
+for determining Critically Endangered species. 
+
+Problem 3: 
+Assumption that the string is a valid classification. IE: That it is listed in the wikipedia page. This must exist and be plural
+
+Problem 4: 
+Assumption that the string is a valid classification listed on wikipedia (similar to question 3 assumptions with formatting). Must be upper cased
+Assumption that the species is in the correct formatting of plurality (it should always be in the correct format)
+Example: "Giant pandas"
+where the first word is always upper case and the following words are all lower case. We will assume that this is the case because the wiki
+files are in this format. 
+
+Problem 5: 
+    * Assumption that the string is a valid species listed on wikipedia
+    * Assumption that the species is in the correct formatting 
+    * (lower case for the classification, and upper case for species)
+
+Problem 6: 
+    * Assumption that the string is a valid country in our wiki page
+    * Assumption that we will ignore the images as countries, and assume that
+    * the recent endangered mammals appears in a row the the country shown in text
+    * Assume no duplicate years (there aren't multiple answerS)
+    * Does not include possibly extinct or extinct in the wild
+    * Early and Late prefixes will be truncated (so will s's
+
+Problem 7: 
+     *     // Assumptions: lower case second word for species
+     *     // Assumption: All inputs are valid and appear in the correct formatting for the wiki
+     
+Problem 8: I am asking the question: what percentage of *amphibians* studied are endangered (the classification only). 
+    //Assumption: The formatting to where the "li" for the number of endangered species remains the same for formatting
+    // Assumption: Correct formating for inputs, and data must exist in wikipedia in order to be processed. 
+    // The data I get can be converted from strings to integers. 
+
+Extra Credit 1 Problem: 
+    //Assumption: The countries listed below are the main countries to be looking for, and it will either be
+    // in one of these countries (found through sampling) or a large ocean body.
+    
+Extra Credit 2 Problem: 
+    //I commented out the problem because it kept throwing an error, and I can't seem to debug it. I do think I have the right approach
+    and am including it to maybe get points? I'm basically going into the wiki article and iterating through all the different types of 
+    reptiles in a specific status and finding it's genus, then counting out how many of that genus there are in the other animals (by incrementing
+    a map). Probably don't deserve points but wanted to add it lol. 
+
